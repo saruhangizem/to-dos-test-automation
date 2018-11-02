@@ -1,6 +1,5 @@
 package base;
 
-import groovyjarjarantlr.collections.List;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import org.apache.commons.lang3.RandomStringUtils;
@@ -12,7 +11,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
-public class zBasePage {
+
+public class BasePage {
 
     public static final int DEFAULT_WAIT = 45;
     protected AppiumDriver<MobileElement> driver;

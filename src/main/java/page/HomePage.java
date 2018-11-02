@@ -2,6 +2,8 @@ package page;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.TouchAction;
+import io.appium.java_client.touch.offset.ElementOption;
 import org.openqa.selenium.WebElement;
 import util.HomePageConstant;
 
@@ -33,7 +35,8 @@ public class HomePage extends HomePageConstant {
 
         try {
             addButton.click();
-            driver.tap(1, addButton, 1000);
+            TouchAction touchAction = new TouchAction(driver);
+            touchAction.tap(ElementOption.element(addButton));
         } catch (Exception ex) {
         }
 
